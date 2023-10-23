@@ -92,6 +92,7 @@
               <a href="shop-single.html"> <img src="{{ $medicine->image_url }}" alt="Image"></a>
               <h3 class="text-dark"><a href="shop-single.html">{{ $medicine->name }}</a></h3>
               <p class="price">{{ $medicine->price }}</p>
+              
             </div>
             @endforeach
 
