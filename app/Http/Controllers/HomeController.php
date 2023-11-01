@@ -27,4 +27,9 @@ class HomeController extends Controller
         $medicines=Medicine::get();
         return view('home',compact('medicines'));
     }
+    public function about()
+    {
+        $medicines=Medicine::get();
+        return view('about',compact('medicines'));
+    }
 }

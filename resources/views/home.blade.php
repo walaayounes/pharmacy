@@ -86,13 +86,13 @@
       <div class="row">
         <div class="col-md-12 block-3 products-wrap">
           <div class="nonloop-block-3 owl-carousel">
+            
 @foreach ($medicines as $medicine)
             <div class="text-center item mb-4 item-v2">
               <span class="onsale">Sale</span>
               <a href="shop-single.html"> <img src="{{ $medicine->image_url }}" alt="Image"></a>
               <h3 class="text-dark"><a href="shop-single.html">{{ $medicine->name }}</a></h3>
               <p class="price">{{ $medicine->price }}</p>
-              
             </div>
             @endforeach
 
