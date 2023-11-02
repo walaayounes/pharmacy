@@ -25,6 +25,7 @@
 <body>
 
     <div>
+        
         <div class="site-navbar py-2">
 
             <div class="search-wrap">
@@ -40,14 +41,14 @@
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="logo">
                         <div class="site-logo">
-                            <a href="index.html" class="js-logo-clone"><strong
+                            <a href="{{ route("home") }}" class="js-logo-clone"><strong
                                     class="text-primary">ghader</strong>pharmacy</a>
                         </div>
                     </div>
                     <div class="main-nav d-none d-lg-block">
                         <nav class="site-navigation text-right text-md-center" role="navigation">
                             <ul class="site-menu js-clone-nav d-none d-lg-block">
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="{{ route("home") }}">Home</a></li>
                                 {{-- <li><a href="shop.html">Store</a></li> --}}
                                 {{-- <li class="has-children">
                                     <a href="#">Products</a>
@@ -68,7 +69,8 @@
                                     </ul>
                                 </li> --}}
                                 <li><a href="{{ URL::to('/about') }}">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                
+                                <li><a href="{{ URL::to('/contact') }}">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -94,30 +96,26 @@
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
 
                         <div class="block-7">
-                            <h3 class="footer-heading mb-4">About <strong class="text-primary">Pharmative</strong></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio
-                                voluptates
-                                sed dolorum excepturi iure eaque, aut unde.</p>
+                            <h3 class="footer-heading mb-4">About <strong class="text-primary">AL ghadeer pharmacy</strong></h3>
+                            <p>Health is a fundamental reason for a person to enjoy a healthy mind and logical thinking. As we know and always say, a healthy mind resides in a healthy body. Health is strength to face difficulties and problems; A healthy person who is free of diseases is the most
+                                capable of facing the difficulties and concerns of life</p>
                         </div>
 
                     </div>
                     <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
-                        <h3 class="footer-heading mb-4">Navigation</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Supplements</a></li>
-                            <li><a href="#">Vitamins</a></li>
-                            <li><a href="#">Diet &amp; Nutrition</a></li>
-                            <li><a href="#">Tea &amp; Coffee</a></li>
-                        </ul>
-                    </div>
+        
+                        <div class="img88"><img src="images/img81.png" alt="Image" class="img-fluid" width="70%">
+                      </div></div>
+            
 
                     <div class="col-md-6 col-lg-3">
                         <div class="block-5 mb-5">
                             <h3 class="footer-heading mb-4">Contact Info</h3>
                             <ul class="list-unstyled">
-                                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                                <li class="address">Syria - Jabal Al-Ward - Al-Mukhtar Street</li>
+                                <li class="phone"><a href="tel://23923929210">+992 820 291</a></li>
                                 <li class="email">emailaddress@domain.com</li>
+                                <li class="name">Walaa Younes Younes</li>
                             </ul>
                         </div>
 
@@ -131,7 +129,7 @@
                             Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made
+                            </script> Welcome to Al Ghadeer Pharmacy | This template is made
                             with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
                                 href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
