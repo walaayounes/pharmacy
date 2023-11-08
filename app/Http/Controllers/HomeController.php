@@ -38,6 +38,13 @@ class HomeController extends Controller
         $medicines=Medicine::get();
         return view('contact',compact('medicines'));
     }
+    public function search(Request $request)
+    {
+        // dd($request->search);
+        $medicines=Medicine::where("name","like",$request->search)->get();
+     //   dd($medicines);
+        return view('home',compact('medicines'));
+    }
     
 }
 
